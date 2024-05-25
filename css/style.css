@@ -18,6 +18,9 @@
     font-family: 'Press Start 2P', cursive;
 }
 
+button {
+    margin-top: 20px;
+}
 
 button:hover {
     cursor: pointer;
@@ -29,6 +32,7 @@ body {
     overflow-x: hidden;
     max-height: 100vh;
     overflow-y: hidden;
+
 }
 
 
@@ -61,15 +65,17 @@ body {
     grid-template-rows: 1fr 1fr;
     height: 100vh;
     background: var(--sky);
-
-
 }
 
 .sky {
-
     display: grid;
     place-items: center;
     text-align: center;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .cloud {
@@ -157,6 +163,11 @@ body {
 }
 
 .message {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
     position: absolute;
     color: var(--pudding);
     padding: 1em;
